@@ -29,6 +29,13 @@ body {
     color: #232323;
     
     transition: color 0.5s ease;
+    /* 
+    transition主要包含四个属性值：
+    color 执行变换的属性：transition-property,
+    0.5s 变换延续的时间：transition-duration,
+    ease 在延续时间段，变换的速率变化transition-timing-function,
+    变换延迟时间transition-delay。
+    */
 }
 
 #menuToggle a:hover {

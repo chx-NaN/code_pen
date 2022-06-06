@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    height: 44px;
+    background-color: #1479d7;
+    border-radius: 3px;
+    align-items: center;
+}
+
+.item {
+    color: wheat;
+    text-decoration: none;
+    text-align: center;
+    flex-grow: 1;
+}

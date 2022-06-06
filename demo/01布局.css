@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+}
+
+
+.left {
+    flex-grow: 1;
+    /* flex-basis: 0; */
+    /* 但是当设置了flex-basis以后，就设定了弹性元素的（相当于width的）尺寸。
+    width跟flex-basis的区别是，flex-basis的优先级更高。
+    如果设置的flex-basis的值不为auto，那么width设置什么值都无效，以flex-basis的值为准。
+    当flex-basis的值为auto的时候，弹性元素才会是width设定的值，
+    如果连width的值都是auto，那就内容自适应 
+    */
+    flex-shrink: 0;
+    /* 
+    flex-shrink同理，分配的是溢出的空间，父容器放不下，那就缩减弹性元素的尺寸。
+    有多少空间放不下，就按flex-shrink标明的分量减少弹性元素的尺寸
+    */
+    background-color: green;
+    height: 300px;
+}
+
+.mid {
+    flex-grow: 1;
+    background-color: blue;
+}
+
+.right {
+    flex-grow: 1;
+    /* 
+    flex-grow 属性定义项目的扩大系数，用于分配容器的剩余空间
+    剩余空间计算方式就是：容器大小 - 所有项目的总大小
+
+    计算将多少剩余空间拿来分配。
+    1.公式：剩余空间 * ( 所有项目的flex-grow之和 >= 1 ? 1 : 所有项目的flex-grow之和 ) 。
+    如果所有项目的flex-grow之和 >=1，那么就是所有的剩余空间都拿来分配，否则乘以系数即为要分配的剩余空间。
+    
+    */
+    background-color: aqua;
+}
